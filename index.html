@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>نظام تسجيل الغياب</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>نظام تسجيل الغياب</h1>
+
+  <button id="toggleFormBtn">➕ إضافة طالب</button>
+
+  <form id="studentForm" style="display: none;">
+    <input type="text" id="name" placeholder="اسم الطالب" required>
+    <input type="text" id="grade" placeholder="الصف" required>
+    <input type="file" id="image" accept="image/*" required>
+    <button type="submit">حفظ الطالب</button>
+  </form>
+
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>الصورة</th>
+        <th>الاسم</th>
+        <th>الصف</th>
+        <th>الحالة</th>
+        <th>الإجراءات</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
